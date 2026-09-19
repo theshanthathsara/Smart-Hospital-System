@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
-1789832603 source:d:\smarthospitalsystem\main.c
+1789848040 source:d:\smarthospitalsystem\main.c
 	<stdio.h>
 	<stdlib.h>
 	"patient.h"
 	"ward.h"
 	"data.h"
+	"billing.h"
 
 1789632519 source:d:\smarthospitalsystem\data.c
 	"data.h"
@@ -26,4 +27,11 @@
 	"patient.h"
 
 1789826274 d:\smarthospitalsystem\patient.h
+
+1789847788 source:d:\smarthospitalsystem\billing.c
+	<stdio.h>
+	"data.h"
+	"billing.h"
+
+1789846407 d:\smarthospitalsystem\billing.h
 
