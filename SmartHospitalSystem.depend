@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1789632519 source:d:\smarthospitalsystem\main.c
+1789664222 source:d:\smarthospitalsystem\main.c
 	<stdio.h>
 	<stdlib.h>
 
@@ -7,4 +7,20 @@
 	"data.h"
 
 1789632519 d:\smarthospitalsystem\data.h
+
+1789664796 source:d:\smarthospitalsystem\ward.c
+	<stdio.h>
+	"data.h"
+	"ward.h"
+
+1789664626 d:\smarthospitalsystem\ward.h
+
+1789831116 source:d:\smarthospitalsystem\patient.c
+	<stdio.h>
+	<string.h>
+	"data.h"
+	"ward.h"
+	"patient.h"
+
+1789826274 d:\smarthospitalsystem\patient.h
 

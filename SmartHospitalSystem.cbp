@@ -38,6 +38,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="patient.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="patient.h" />
 		<Unit filename="ward.c">
 			<Option compilerVar="CC" />
 		</Unit>
