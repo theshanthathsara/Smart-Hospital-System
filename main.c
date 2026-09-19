@@ -3,6 +3,8 @@
 #include "patient.h"
 #include "ward.h"
 #include "data.h"
+#include "billing.h"
+
 
 int main()
 {
@@ -53,7 +55,11 @@ int main()
 
                 if ( n>=1 && n<=patientCount )
                 {
-
+                    generateBill(n-1);
+                }
+                else
+                {
+                    printf("Invalid input!\n");
                 }
             }
         }
