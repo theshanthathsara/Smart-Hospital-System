@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-int selectOption();
-int selector;
+#include "patient.h"
+#include "ward.h"
+#include "data.h"
 
 int main()
 {
@@ -25,37 +25,37 @@ int main()
             continue;
         }
 
+        while (getchar()!='\n');
+
         if (choice==1)
         {
-            printf("\nRegister Patient\n");
-            printf("Not implemented yet\n");
-            printf("1.Go to main menu\n");
-            printf("2.Exit\n");
-
-            selectOption();
-
-            if ( selector==1 )
-            {
-                continue;
-            }
-            if ( selector==2 )
-            {
-                break;
-            }
-            else
-            {
-                printf("Invalid character, going back to main menu...\n");
-            }
-
+            registerPatient();
         }
         else if ( choice==2 )
         {
-            printf("\nView bed status.not implemented yet\n");
+            displayBedStatus();
         }
 
         else if ( choice==3 )
         {
-            printf("\nGenerate bill.not implemented yet\n");
+            if ( patientCount==0 )
+            {
+                printf("\nNo patients registered yet.\n");
+            }
+            else
+            {
+                int n;
+                displayAllPatients();
+                printf("Enter patient number to bill(1 to %d) : ",patientCount );
+                scanf("%d",&n);
+
+                while ( getchar()!='\n');
+
+                if ( n>=1 && n<=patientCount )
+                {
+
+                }
+            }
         }
         else if ( choice==4 )
         {
@@ -75,8 +75,4 @@ int main()
     return 0;
 }
 
-int selectOption()
-{
-    scanf("%d",&selector);
-    return selector;
-}
+
