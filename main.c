@@ -4,6 +4,7 @@
 #include "ward.h"
 #include "data.h"
 #include "billing.h"
+#include "report.h"
 
 
 int main()
@@ -65,7 +66,7 @@ int main()
         }
         else if ( choice==4 )
         {
-            printf("\nReports\n");
+            generateReports();
         }
         else if ( choice==5 )
         {
