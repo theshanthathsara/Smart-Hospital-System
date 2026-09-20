@@ -1,0 +1,7 @@
+bin/
+obj/
+*.depend
+*.layout
+bed_status
+patient_records
+test_location

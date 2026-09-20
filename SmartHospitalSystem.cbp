@@ -39,6 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="data.h" />
+		<Unit filename="fileio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fileio.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

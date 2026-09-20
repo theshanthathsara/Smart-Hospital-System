@@ -5,11 +5,14 @@
 #include "data.h"
 #include "billing.h"
 #include "report.h"
+#include "fileio.h"
 
 
 int main()
 {
     int choice=0;
+
+    loadBedStatus();
 
     do {
         printf("\nSMART HOSPITAL SYSTEM\n");
@@ -33,6 +36,7 @@ int main()
         if (choice==1)
         {
             registerPatient();
+            saveBedStatus();
         }
         else if ( choice==2 )
         {
@@ -57,6 +61,7 @@ int main()
                 if ( n>=1 && n<=patientCount )
                 {
                     generateBill(n-1);
+                    appendPatientRecord(n-1);
                 }
                 else
                 {
@@ -71,6 +76,7 @@ int main()
         else if ( choice==5 )
         {
             printf("\nGood Bye!\n");
+            saveBedStatus();
         }
         else
         {
